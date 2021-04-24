@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+	background-image: url('roma.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container div {
+    margin: 20px;
+    padding: 10px;
+}
+.container div button {
+    padding: 30px;
+}
