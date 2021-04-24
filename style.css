@@ -15,27 +15,29 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+button {
+	border: none;
+    text-align: center;
+    text-decoration: none;
+	font-size: 24px;
+    font-weight: 700;
+}
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+	margin-top: 50px;
 }
 .container div {
     margin: 20px;
     padding: 10px;
 }
 .container div button {
-    padding: 40px;
-    border: none;
     border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    background-color: rgba(53, 53, 104, 0.8);
+	padding: 40px;
+    background-color: rgba(53, 53, 104, 0.7);
     color: whitesmoke;
-    text-shadow: white;
-    font-size: 24px;
-    font-weight: 700;
 }
 .container div button:disabled {
     background-color: rgba(124, 124, 124, 0.8);
@@ -45,20 +47,44 @@ body {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .value {
-    margin:auto;
+    display: flex;
+	margin: 40px auto;
+	padding: 10px;
     width: 50%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 50px rgba(255,255,255);
+	border-radius: 3px;
 }
 .value p {
-    color:dimgray;
-    font-size: 36px;
-
+    color:#ffffffde;
+    font-size: 42px;
+	text-align: center;
+}
+.value p:empty::before {
+content: "\200b"; /* unicode zero width space character */
+}
+.value button {
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(255,255,255,1);
+	padding: 12px;
+	margin: 12px;
+}
+.value button:hover {
+	font-size: 36px;
+	margin: 4.5px;
 }
 
 @media screen and (max-width: 800px) {
-    .container div {
+    .container {
+		margin-top: 0px;
+	}
+	.container div {
         margin: 5px;
-        margin-top: 50px;
+        margin-top: 10px;
         padding: 2px;
     }
     .container div button {
@@ -67,9 +93,29 @@ body {
     .container div button {
         background-color: darkkhaki;
     }
+	.value button {
+		border-radius: 5px;
+		background-color: rgba(0, 0, 0, 0);
+		color: rgba(255,255,255,1);
+		font-size: 22px;
+		font-weight: normal;
+		padding: 4px;
+		margin: 6px;
+}
+.value button:hover {
+	font-size: 24px;
+	margin: 5px;
+}
 }
 @media screen and (max-width: 480px) {
     .value p {
     font-size: 18px;
     }
+	.value button {
+		font-size: 16px;
+	}
+	.value button:hover {
+	font-size: 18px;
+	margin: 4.8px;
+	}
 }
