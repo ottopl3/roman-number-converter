@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet"/>
 	<link rel="icon" href="favicon.png" type="image/png" sizes="16x16"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet"> 
     <title>Interaktív átváltó római számokhoz</title>
 </head>
 <body>
@@ -19,9 +21,12 @@
         <div><button id="d" onclick="hozzaad(this.id)">D</button></div>
         <div><button id="m" onclick="hozzaad(this.id)">M</button></div>
     </div>
-	<p id="romai"></p>
-    <p id="szam"></p>
-    <button onclick="reset()">Reset</button>
+    <div class="value">
+	    <p id="romai"></p>
+        <p id="szam"></p>
+        <button onclick="reset()">Reset</button>
+    </div>
+
 </div>
 <script src="calculate.js"></script>
 </body>

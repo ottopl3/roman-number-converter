@@ -1,6 +1,8 @@
 var szam=0;
  var romai="";
  let gombok=new Array(7).fill(0);
+
+ //attributum beallitasahoz
  var i=document.getElementById("i");
  var v=document.getElementById("v");
  var x=document.getElementById("x");
@@ -8,6 +10,7 @@ var szam=0;
  var c=document.getElementById("c");
  var d=document.getElementById("d");
  var m=document.getElementById("m");
+
  function hozzaad(id){
     console.log(gombok[0]);
     if (id=="i") {
@@ -57,12 +60,12 @@ var szam=0;
 			d.disabled=true;
 			m.disabled=true;
 			if (gombok[0]>0) {
-                szam=-1*szam;
+                szam-=2;
                 i.disabled=true;
 				v.disabled=true;
 				x.disabled=true;
             }
-			if (gombok[4]>0 && gombok[2]==1 && gombok[3]==0) {
+			if (gombok[4]>0 && gombok[2]==1 && gombok[3]==0 && gombok[0]==0) {
 				c.disabled=false;
 			}
             szam+=10;
