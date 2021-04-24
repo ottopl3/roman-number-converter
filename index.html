@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet"/>
-	<link rel="icon" href="favicon.png" type="image/png" sizes="16x16"> 
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <title>Interaktív átváltó római számokhoz</title>
 </head>
-<body>
-<div class="wrapper">
-    <div class="container">
-        <div><button id="i" onclick="hozzaad(this.id)">I</button></div>
-        <div><button id="v" onclick="hozzaad(this.id)">V</button></div>
-        <div><button id="x" onclick="hozzaad(this.id)">X</button></div>
-        <div><button id="l" onclick="hozzaad(this.id)">L</button></div>
-        <div><button id="c" onclick="hozzaad(this.id)">C</button></div>
-        <div><button id="d" onclick="hozzaad(this.id)">D</button></div>
-        <div><button id="m" onclick="hozzaad(this.id)">M</button></div>
-    </div>
-    <div class="value">
-	    <p id="romai"></p>
-        <p id="szam"></p>
-        <button onclick="reset()">Új számítás</button>
-    </div>
 
-</div>
-<script src="calculate.js"></script>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div><button id="i" onclick="hozzaad(this.id)">I</button></div>
+            <div><button id="v" onclick="hozzaad(this.id)">V</button></div>
+            <div><button id="x" onclick="hozzaad(this.id)">X</button></div>
+            <div><button id="l" onclick="hozzaad(this.id)">L</button></div>
+            <div><button id="c" onclick="hozzaad(this.id)">C</button></div>
+            <div><button id="d" onclick="hozzaad(this.id)">D</button></div>
+            <div><button id="m" onclick="hozzaad(this.id)">M</button></div>
+        </div>
+        <div class="value">
+            <p id="romai"></p>
+            <p id="szam"></p>
+            <button onclick="reset()">Új számítás</button>
+        </div>
+
+    </div>
+    <script src="calculate.js"></script>
 </body>
+
 </html>
